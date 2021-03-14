@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mobile first design-Stacademic wk 4</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com.css2?family=RocknRoll+One&amp;display=swap"
+      rel="stylesheet">
+    <style>
+    .navigation {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content:flex-start;
+      list-style: none;
+      margin: 0;
+      background: #5772AD;
+    }
+   
+     .navigation a{
+       text-decoration: none;
+       display: block;
+       padding: 5px;
+       color: white;
+     }
+    
+    .navigation a:hover {
+      background:#AFC6FA
+    }
+    /*phones */
+    @media all and (max-width: 800px)
+      .navitation {
+       justify-content: space-around;
+      }
+    
+    .flex-container{
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: flex;
+  	padding: 0px;
+  	margin: 0;
+  	list-style: none;
+  }
+  
+  
+  .flex-item {
+  		background: #5772AD;
+  		padding; 5px;
+  		width:170px;
+  		height: 20%;
+    	margin-top: 5px;
+    	line-height: 50px;
+    	color: white;
+    	font-weight: bold;
+    	font-size: 24px;
+    	text-align: center;
+      border-radius: 5%;
+    	align-self: flex-start;
+      flex-wrap: wrap;
+ 
+    }
+      Body {
+        background-image: linear-gradient(45deg, #AD9968, #FFF0CC);
+        margin: 20;
+        height: 100%;
+      }
+      h1 {
+        font-family:'RocknRoll One', sans-serif;
+        font-size: 30px;
+        color: white;
+        -webkit-text-stroke: .5px black;
+      }
+      
+      
+      header {
+  display: flex;
+  align-items: center;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  justify-content: center;
+  margin-bottom: 2em;
+  background: #000;
+  color: #fff;
+  min-height: 10vh;
+  text-align: center;
+}
+
+ul, ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+ul.weekdays {
+  margin-bottom: 1em;
+}
+
+ul.weekdays li {
+  height: 4vw;
+}
+
+ol.day-grid li {
+  background-color: #AFC6FA;
+  border: 1px solid #5772AD;
+  height: 12vw;
+  max-height: 125px;
+}
+
+ul.weekdays abbr[title] {
+  border: none;
+  font-weight: 800;
+  text-decoration: none;
+}
+      
+
+ol.day-grid li:nth-child(1),
+ol.day-grid li:nth-child(33),
+ol.day-grid li:nth-child(34),
+ol.day-grid li:nth-child(35){
+  background-color: #fff;
+}
+
+@media all and (max-width: 800px) {
+  ul, ol {
+    grid-gap: .25em;
+  }
+  
+  ul.weekdays li {
+    font-size: 0;
+  }
+  
+  ul.weekdays > li abbr:after {
+      content: attr(title);
+      font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    }
+}
+
+	.btn{
+      background: #5772AD;
+  		padding; 30px;
+  		width:170px;
+  		height: 30%;
+    	margin-top: 15px;
+    	line-height: 100px;
+    	color: white;
+    	font-weight: bold;
+    	font-size: 40px;
+    	text-align: center;
+      border-radius: 5%;
+  }
+
+
+Resources
+        
+    
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="navigation">
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="about.asp">About</a></li>
+          <li><a href="events.asp">Events</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+        </ul>
+        <button> </button> </nav>
+      <h1>Events By Niccole</h1>
+      <h2>Trade Show</h2>
+      <img src="https://images.freeimages.com/images/large-previews/1f8/suntec-convention-centre-1226826.jpg"
+        alt="business trade show"
+        width="460"
+        height="345">
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.</p>
+      <p></p>
+      <div class="wrapper">
+        <aside class="sidebar">
+          <h3> </h3>
+        </aside>
+        <section class="main">
+          <nav>
+            <ul class="flex-container">
+              <li class="flex-item">Trade Show</li>
+              <li class="flex-item">Team Building</li>
+              <li class="flex-item">Party</li>
+              <li class="flex-item">Convention</li>
+              <li class="flex-item">Ceremony</li>
+              <li class="flex-item">Other</li>
+            </ul>
+          </nav>
+          <p><button class="contact"> Contact</button> Niccole today to book
+            your event! </p>
+          <h1>Events Calendar</h1>
+          <div class="calendar">
+            <header>
+              <h1>March 2021</h1>
+            </header>
+            <ul class="weekdays">
+              <li> <abbr title="S">Sunday</abbr> </li>
+              <li> <abbr title="M">Monday</abbr> </li>
+              <li> <abbr title="T">Tuesday</abbr> </li>
+              <li> <abbr title="W">Wednesday</abbr> </li>
+              <li> <abbr title="T">Thursday</abbr> </li>
+              <li> <abbr title="F">Friday</abbr> </li>
+              <li> <abbr title="S">Saturday</abbr> </li>
+            </ul>
+            <ol class="day-grid">
+              <li class="month=prev">28</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+              <li class="month-next">1</li>
+              <li class="month-next">2</li>
+              <li class="month-next">3</li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </div>
+    <p><br>
+    </p>
+    <footer>Made by J. Grether for educational purposes only, 2021</footer>
+  </body>
+</html>
